@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Nav'
 // import assets from '../assets'
 
 export default function familyEvents({title,location, phone, website, instagram, facebook, price}){
-    
 
     return(
       <Navbar>
@@ -19,7 +18,7 @@ export default function familyEvents({title,location, phone, website, instagram,
             </Col>
         </Row>            
         <Row>
-            <Col sm={12} md={4}><img src = 'images/watertaxi.jpg' alt='' /></Col> 
+            <Col sm={12} md={4}><img src = 'images/watertaxi.jpg' alt='water taxi' /></Col> 
             <Col><p>Descriptions</p></Col>      
         </Row>
         <Row>
@@ -47,94 +46,166 @@ export default function familyEvents({title,location, phone, website, instagram,
     )
 }
 
-// export default function EventDetails2(){
+// export function familyEvents2({title,location, phone, website, instagram, facebook, price}){
 
 //     return(
+     
+//       <Container fluid>
+           
+//         <Row> 
+//           <Col>
+//             <h1>{title}</h1>
+//             </Col>
+//         </Row>            
+//         <Row>
+//             <Col sm={12} md={4}><img src = '' alt='' /></Col> 
+//             <Col><p>Descriptions</p></Col>      
+//         </Row>
+//         <Row>
+//             <Col sm={12} md={4}>
+//                 <p>{location}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{phone}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{website}</p> 
+//             </Col>
+                 
+//             <Col sm={12} md={4}>
+//                 <p>{instagram}</p>
+//                 <p>{facebook}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                 <p>{price}</p>
+//             </Col>
+              
+//             </Row>
+//         </Container>
         
-//         <div className="museum">
-//             <h1>Museum of Discovery and Science</h1>
-//             <image/>
-
-//             <blockquote> 
-//             <p></p>
-//             </blockquote>
-//             <ul>
-//             <li>Prices</li>
-//             <li>contact number</li>
-//             <li>social media</li>
-//             <li>address</li>
-//             </ul>
-            
-        
-//         </div>
 //     )
 // }
 
-// export default function EventDetails3(){
+
+// export function familyEvents3({title,location, phone, website, instagram, facebook, price}){
 
 //     return(
-        
-//         <div className="jazz">
-//             <h1>Sunday Jazz Brunch</h1>
-//             <image/>
-
-//             <blockquote> 
-//             <p></p>
-//             </blockquote>
-//             <ul>
-//             <li>Prices</li>
-//             <li>contact number</li>
-//             <li>social media</li>
-//             <li>address</li>
-//             </ul>
+      
+//       <Container fluid>
             
-        
-//         </div>
+//         <Row> 
+//           <Col>
+//             <h1>{title}</h1>
+//             </Col>
+//         </Row>            
+//         <Row>
+//             <Col sm={12} md={4}><img src = '' alt='' /></Col> 
+//             <Col><p>Descriptions</p></Col>      
+//         </Row>
+//         <Row>
+//             <Col sm={12} md={4}>
+//                 <p>{location}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{phone}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{website}</p> 
+//             </Col>
+                 
+//             <Col sm={12} md={4}>
+//                 <p>{instagram}</p>
+//                 <p>{facebook}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                 <p>{price}</p>
+//             </Col>
+              
+//             </Row>
+//         </Container>
+       
 //     )
 // }
 
-// export default function EventDetails4(){
+
+// export function familyEvents4({title,location, phone, website, instagram, facebook, price}){
 
 //     return(
+      
+//       <Container fluid>
+           
+//         <Row> 
+//           <Col>
+//             <h1>{title}</h1>
+//             </Col>
+//         </Row>            
+//         <Row>
+//             <Col sm={12} md={4}><img src = '' alt='' /></Col> 
+//             <Col><p>Descriptions</p></Col>      
+//         </Row>
+//         <Row>
+//             <Col sm={12} md={4}>
+//                 <p>{location}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{phone}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{website}</p> 
+//             </Col>
+                 
+//             <Col sm={12} md={4}>
+//                 <p>{instagram}</p>
+//                 <p>{facebook}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                 <p>{price}</p>
+//             </Col>
+              
+//             </Row>
+//         </Container>
         
-//         <div className="pirates">
-//             <h1>Bluefoot Pirate Adventures</h1>
-//             <image/>
-
-//             <blockquote> 
-//             <p></p>
-//             </blockquote>
-//             <ul>
-//             <li>Prices</li>
-//             <li>contact number</li>
-//             <li>social media</li>
-//             <li>address</li>
-//             </ul>
-            
-        
-//         </div>
 //     )
 // }
 
-// export default function EventDetails5(){
+
+// export  function familyEvents5({title,location, phone, website, instagram, facebook, price}){
 
 //     return(
-        
-//         <div className="jungle">
-//             <h1>Jungle Queen</h1>
-//             <image/>
-
-//             <blockquote> 
-//             <p></p>
-//             </blockquote>
-//             <ul>
-//             <li>Prices</li>
-//             <li>contact number</li>
-//             <li>social media</li>
-//             <li>address</li>
-//             </ul>
-            
-        
-//         </div>
+      
+//       <Container fluid>
+           
+           
+//         <Row> 
+//           <Col>
+//             <h1>{title}</h1>
+//             </Col>
+//         </Row>            
+//         <Row>
+//             <Col sm={12} md={4}><img src = '' alt='' /></Col> 
+//             <Col><p>Descriptions</p></Col>      
+//         </Row>
+//         <Row>
+//             <Col sm={12} md={4}>
+//                 <p>{location}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{phone}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                  <p>{website}</p> 
+//             </Col>
+                 
+//             <Col sm={12} md={4}>
+//                 <p>{instagram}</p>
+//                 <p>{facebook}</p>
+//             </Col>
+//             <Col sm={12} md={4}>
+//                 <p>{price}</p>
+//             </Col>
+              
+//             </Row>
+//         </Container>
+       
 //     )
 // }

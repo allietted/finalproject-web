@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import FamilyDetails from '../Scenes/FamilyDetails'
 
-export function FamilyListing() {
+
+export default function FamilyListing() {
     // const[showEvents, setShowEvents]= useState("");
     const [data, setData] = useState("")
 
@@ -17,6 +18,7 @@ export function FamilyListing() {
 
     return (
         <div>
+            
             {!data
                 ? (<p>Loading....</p>)
                 : (data.map(
