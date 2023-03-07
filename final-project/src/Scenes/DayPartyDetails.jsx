@@ -1,117 +1,47 @@
-export default function EventDetails1(){
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container  from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Nav'
+// import assets from '../assets'
+
+export default function dayParty({title,location, phone, website, instagram, facebook, price}){
 
     return(
-        
-        <div className="water-taxi">
-            <h1>Water Taxi</h1>
-            <image/>
-
-            <blockquote> 
-            <p>Departs from the great of Fort Lauderdale area.
-            You can track the taxi on website or app.
-            Multi Day Pass with unlimited rides for 30 days.</p>
-            </blockquote>
-            <ul>
-            <li>Prices '$'</li>
-            <li>contact number</li>
-            <li>social media</li>
-            <li>address</li>
-            <li>website</li>
-            </ul>
-            
-        
-        </div>
-    )
-}
-
-export default function EventDetails2(){
-
-    return(
-        
-        <div className="museum">
-            <h1>Museum of Discovery and Science</h1>
-            <image/>
-
-            <blockquote> 
-            <p></p>
-            </blockquote>
-            <ul>
-            <li>Prices</li>
-            <li>contact number</li>
-            <li>social media</li>
-            <li>address</li>
-            </ul>
-            
-        
-        </div>
-    )
-}
-
-export default function EventDetails3(){
-
-    return(
-        
-        <div className="jazz">
-            <h1>Sunday Jazz Brunch</h1>
-            <image/>
-
-            <blockquote> 
-            <p></p>
-            </blockquote>
-            <ul>
-            <li>Prices</li>
-            <li>contact number</li>
-            <li>social media</li>
-            <li>address</li>
-            </ul>
-            
-        
-        </div>
-    )
-}
-
-export default function EventDetails4(){
-
-    return(
-        
-        <div className="pirates">
-            <h1>Bluefoot Pirate Adventures</h1>
-            <image/>
-
-            <blockquote> 
-            <p></p>
-            </blockquote>
-            <ul>
-            <li>Prices</li>
-            <li>contact number</li>
-            <li>social media</li>
-            <li>address</li>
-            </ul>
-            
-        
-        </div>
-    )
-}
-
-export default function EventDetails5(){
-
-    return(
-        
-        <div className="jungle">
-            <h1>Jungle Queen</h1>
-            <image/>
-
-            <blockquote> 
-            <p></p>
-            </blockquote>
-            <ul>
-            <li>Prices</li>
-            <li>contact number</li>
-            <li>social media</li>
-            <li>address</li>
-            </ul>
-            
-        
-        </div>
+      <Navbar>
+      <Container fluid>
+            <div>
+                <h1>Day Party</h1>
+            </div>
+        <Row> 
+          <Col>
+            <h1>{title}</h1>
+            </Col>
+        </Row>            
+        <Row>
+            <Col sm={12} md={4}><img src = 'images/watertaxi.jpg' alt='water taxi' /></Col> 
+            <Col><p>Descriptions</p></Col>      
+        </Row>
+        <Row>
+            <Col sm={12} md={4}>
+                <p>{location}</p>
+            </Col>
+            <Col sm={12} md={4}>
+                 <p>{phone}</p>
+            </Col>
+            <Col sm={12} md={4}>
+                 <p>{website}</p> 
+            </Col>
+                 
+            <Col sm={12} md={4}>
+                <p>{instagram}</p>
+                <p>{facebook}</p>
+            </Col>
+            <Col sm={12} md={4}>
+                <p>{price}</p>
+            </Col>
+              
+            </Row>
+        </Container>
+        </Navbar>
     )
 }

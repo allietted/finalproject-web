@@ -1,10 +1,39 @@
-export default function ladiesListing (){
-    return(
-        <>
-            <h1>Ladies Night Out</h1>
+import { useState, useEffect } from 'react';
+import LadiesDetails from '../Scenes/LadiesDetails'
 
-            <p> just place the title and event image</p>
-            <button>each button will then connect you to event details</button>
-        </>
+
+export default function LadiesListing() {
+    // const[showEvents, setShowEvents]= useState("");
+    const [data, setData] = useState("")
+
+    useEffect(() => {
+        fetch(`https://final-project-api-ad.web.app/ladiesnight`)
+            .then(res => res.json())
+            .then(setData)
+            .catch(err => console.error(err))
+    }, [setData])
+
+
+
+
+    return (
+        <div>
+            
+            {!data
+                ? (<p>Loading....</p>)
+                : (data.map(
+                    (element) => (
+                        <LadiesDetails
+                            title={element.title}
+                            location={element.location}
+                            phone={element.phone}
+                            website={element.website}
+                            instagram={element.instagram}
+                            facebook={element.facebook}
+                            price={element.price}
+                        />)
+                ))
+            }
+        </div>
     )
 }

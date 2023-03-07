@@ -7,11 +7,11 @@ export default function FamilyListing() {
     const [data, setData] = useState("")
 
     useEffect(() => {
-        fetch(`https://final-project-api-ad.web.app/events`)
+        fetch(`https://final-project-api-ad.web.app/familyevents`)
             .then(res => res.json())
             .then(setData)
-            .catch(err => console.err(err))
-    }, [setData])
+            .catch(err => console.error(err))
+    }, [])
 
 
 
