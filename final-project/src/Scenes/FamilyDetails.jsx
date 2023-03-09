@@ -4,14 +4,11 @@ import Container  from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Nav'
 // import assets from '../assets'
 
-export default function familyEvents({title,location, phone, website, instagram, facebook, price}){
+export default function FamilyEvents({title,location, phone, website, instagram, facebook, price}){
 
     return(
       <Navbar>
-      <Container fluid>
-            <div>
-                <h1>Family Events</h1>
-            </div>
+      <Container fluid>     
         <Row> 
           <Col>
             <h1>{title}</h1>

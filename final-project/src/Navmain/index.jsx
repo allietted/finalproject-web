@@ -5,9 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function navMain() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="nav">
       <Container>
-        <Navbar.Brand href="#home">Top 5</Navbar.Brand>
+        <Navbar.Brand href="#home">Explore</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

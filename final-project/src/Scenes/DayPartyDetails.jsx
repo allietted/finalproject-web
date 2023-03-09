@@ -4,14 +4,11 @@ import Container  from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Nav'
 // import assets from '../assets'
 
-export default function dayParty({title,location, phone, website, instagram, facebook, price}){
+export default function DayParty({title,location, phone, website, instagram, facebook, price}){
 
     return(
       <Navbar>
       <Container fluid>
-            <div>
-                <h1>Day Party</h1>
-            </div>
         <Row> 
           <Col>
             <h1>{title}</h1>

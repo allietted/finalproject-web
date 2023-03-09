@@ -7,7 +7,8 @@ export default function DayPartyListing() {
     const [data, setData] = useState("")
 
     useEffect(() => {
-        fetch(`https://final-project-api-ad.web.app/dayparty`)
+        // fetch(`https://final-project-api-ad.web.app/dayparty`)
+        fetch(`http://127.0.0.1:5000/dayparty`)
             .then(res => res.json())
             .then(setData)
             .catch(err => console.error(err))

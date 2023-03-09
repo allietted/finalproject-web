@@ -23,7 +23,7 @@ export default function FamilyListing() {
                 ? (<p>Loading....</p>)
                 : (data.map(
                     (element) => (
-                        <FamilyDetails
+                        <FamilyDetails key={element._id}
                             title={element.title}
                             location={element.location}
                             phone={element.phone}
