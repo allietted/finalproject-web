@@ -2,6 +2,7 @@ import Button  from 'react-bootstrap/Button';
 
 
 
+
 export default function DeleteEvent ({eventId, setDayListing}){
 
     const handleDelete = () => {
@@ -21,8 +22,7 @@ export default function DeleteEvent ({eventId, setDayListing}){
     return(
         
 
-        <Button onClick = {handleDelete} variant='primary' type='submit'>Delete Event
-         </Button>
+ <Button onClick = {handleDelete} variant='primary' type='submit' width="30px"></Button> 
          
          
     
