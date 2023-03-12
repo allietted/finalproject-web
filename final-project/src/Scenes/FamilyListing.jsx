@@ -4,14 +4,14 @@ import FamilyDetails from '../Scenes/FamilyDetails'
 
 export default function FamilyListing() {
     // const[showEvents, setShowEvents]= useState("");
-    const [data, setData] = useState("")
+    const [familyListing, setFamilyListing] = useState("")
 
     useEffect(() => {
         fetch(`https://final-project-api-ad.web.app/familyevents`)
             .then(res => res.json())
-            .then(setData)
+            .then(setFamilyListing)
             .catch(err => console.error(err))
-    }, [])
+    }, [setFamilyListing])
 
 
 
@@ -19,11 +19,13 @@ export default function FamilyListing() {
     return (
         <div>
             
-            {!data
+            {!familyListing
                 ? (<p>Loading....</p>)
-                : (data.map(
+                : (familyListing.map(
                     (element) => (
                         <FamilyDetails key={element._id}
+                            eventCat={element._id}
+                            image={element.image}
                             title={element.title}
                             location={element.location}
                             phone={element.phone}
@@ -31,6 +33,7 @@ export default function FamilyListing() {
                             instagram={element.instagram}
                             facebook={element.facebook}
                             price={element.price}
+                            description={element.description}
                         />)
                 ))
             }

@@ -4,14 +4,14 @@ import LadiesDetails from '../Scenes/LadiesDetails'
 
 export default function LadiesListing() {
     // const[showEvents, setShowEvents]= useState("");
-    const [data, setData] = useState("")
+    const [ladieslisting, setLadiesListing] = useState("")
 
     useEffect(() => {
         fetch(`https://final-project-api-ad.web.app/ladiesnight`)
             .then(res => res.json())
-            .then(setData)
+            .then(setLadiesListing)
             .catch(err => console.error(err))
-    }, [setData])
+    }, [setLadiesListing])
 
 
 
@@ -19,11 +19,13 @@ export default function LadiesListing() {
     return (
         <div>
             
-            {!data
+            {!ladieslisting
                 ? (<p>Loading....</p>)
-                : (data.map(
+                : (ladieslisting.map(
                     (element) => (
-                        <LadiesDetails
+                        <LadiesDetails key={element._id}
+                            eventCat={element._id}
+                            image={element.image}
                             title={element.title}
                             location={element.location}
                             phone={element.phone}
@@ -31,6 +33,7 @@ export default function LadiesListing() {
                             instagram={element.instagram}
                             facebook={element.facebook}
                             price={element.price}
+                            description={element.description}
                         />)
                 ))
             }

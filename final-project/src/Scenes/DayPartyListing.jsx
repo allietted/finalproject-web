@@ -4,27 +4,29 @@ import DayPartyDetails from '../Scenes/DayPartyDetails'
 
 export default function DayPartyListing() {
     // const[showEvents, setShowEvents]= useState("");
-    const [data, setData] = useState("")
+    const [dayListing, setDayListing] = useState("")
 
     useEffect(() => {
         // fetch(`https://final-project-api-ad.web.app/dayparty`)
-        fetch(`http://127.0.0.1:5000/dayparty`)
+        fetch(`https://final-project-api-ad.web.app/dayparty`)
             .then(res => res.json())
-            .then(setData)
+            .then(setDayListing)
             .catch(err => console.error(err))
-    }, [setData])
+    }, [setDayListing])
 
 
 
 
     return (
         <div>
-            
-            {!data
+
+            {!dayListing
                 ? (<p>Loading....</p>)
-                : (data.map(
+                : (dayListing.map(
                     (element) => (
-                        <DayPartyDetails
+                        <DayPartyDetails key={element._id}
+                            eventId={element._id}
+                            image={element.image}
                             title={element.title}
                             location={element.location}
                             phone={element.phone}
@@ -32,9 +34,12 @@ export default function DayPartyListing() {
                             instagram={element.instagram}
                             facebook={element.facebook}
                             price={element.price}
-                        />)
+                            description={element.description}
+                        />
+                    )
                 ))
             }
+
         </div>
     )
 }

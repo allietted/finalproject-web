@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 
 
@@ -27,21 +28,21 @@ export default function Home (){
                     <img src= './images/familythumbnail.webp' alt =''/>
                     <h3>Family Events</h3>
                     <p>Spending time with loved ones can be a rewarding and enriching experience.</p>
-                    <Button>Learn More</Button>
+                    <Link to = '/familyevents'><Button>Learn More</Button></Link>
                 </Col>
 
                 <Col sm={12} md={4}>
                     <img src= 'https://www.americanexpress.com/en-us/travel/discover/photos/100073/7776/1600/Hero_PoolDeck.jpg?ch=560' alt =''/>
                     <h3>Day Party</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nisi molestias corrupti iusto quae obcaecati</p>
-                    <Button>Learn More</Button>
+                    <Link to = '/dayparty'><Button>Learn More</Button></Link>
                 </Col>
 
                 <Col sm={12} md={4}>
                     <img src= 'https://www.americanexpress.com/en-us/travel/discover/photos/100073/7776/1600/Hero_PoolDeck.jpg?ch=560' alt =''/>
                     <h3>Ladies Night</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nisi molestias corrupti iusto quae obcaecati</p>
-                    <Button>Learn More</Button>
+                    <Link to = '/ladiesnight'><Button>Learn More</Button></Link>
                 </Col>
                     
             </Row>

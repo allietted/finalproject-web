@@ -1,6 +1,7 @@
-import {useEffect, useState} from 'react';
+import  {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button  from 'react-bootstrap/Button';
+
 
 
 export default function AddEvents (){
@@ -11,16 +12,15 @@ export default function AddEvents (){
     const[website, setWebsite]= useState("");
     const[instagram, setInstagram]= useState("");
     const[facebook, setFacebook]= useState("");
-    // const[image, setImage]= useState("");
+    const[image, setImage]= useState("");
     const[price, setPrice]= useState("");
+
     
    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log ({e});
     }
-
-        useEffect (()=>{
         fetch(`https://final-project-api-ad.web.app/adddayparty`, {
             method: "POST",
             headers:{
@@ -34,16 +34,26 @@ export default function AddEvents (){
                 website,
                 instagram,
                 facebook,
-                // image,
+                image,
                 price,
             }),
-        },[])
+        })
     
         .then(res => res.json())
-        .then()
+        .then(() => {
+            setEventCategory("");
+            setTitle("");
+            setLocation("");
+            setPhone("");
+            setWebsite("");
+            setInstagram("");
+            setFacebook("");
+            setImage("");
+            setPrice("")
+        })
         .catch(err => console.error(err))
 
-    })
+    
    
     return(
         < Form onSubmit ={handleSubmit}>
@@ -108,10 +118,13 @@ export default function AddEvents (){
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}/>
          </Form.Group>
-         {/* <Form.Group className = "mb-3" controlId='formFile'>
+         <Form.Group className = "mb-3" controlId='formFile'>
             <Form.Label>Upload Image</Form.Label>
-            <Form.Control type="file"/>              
-         </Form.Group> */}
+            <Form.Control 
+            type="text"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}/>              
+         </Form.Group>
          <Button onClick ={handleSubmit}variant='primary' type='submit'>Add Event
          </Button>
         </Form>

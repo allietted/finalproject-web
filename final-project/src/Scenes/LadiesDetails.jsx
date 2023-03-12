@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Nav'
 import DeleteEvent from '../Admin/DeleteEvents';
 // import assets from '../assets'
 
-export default function LadiesNight({title,location, phone, website, instagram, facebook, price}){
+export default function LadiesNight({image, description,title,location, phone, website, instagram, facebook, price}){
 
     return(
       <Navbar>
@@ -16,8 +16,8 @@ export default function LadiesNight({title,location, phone, website, instagram, 
             </Col>
         </Row>            
         <Row>
-            <Col sm={12} md={4}><img src = 'images/watertaxi.jpg' alt='water taxi' /></Col> 
-            <Col><p>Descriptions</p></Col>      
+            <Col sm={12} md={4}><img src = {image} alt = ""/></Col> 
+            <Col><p>{description}</p></Col>      
         </Row>
         <Row>
             <Col sm={12} md={4}>
