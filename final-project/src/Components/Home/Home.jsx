@@ -26,22 +26,22 @@ export default function Home (){
             <Row>
                 <Col sm={12} md={4}>
                     <img src= './images/familythumbnail.webp' alt =''/>
-                    <h3>Family Events</h3>
-                    <p>Spending time with loved ones can be a rewarding and enriching experience.</p>
+                    <h3 style ={{textAlign:"center", color: "white"}}>Family Events</h3>
+                    <p style ={{color: "white"}}>Spending time with loved ones can be a rewarding and enriching experience.</p>
                     <Link to = '/familyevents'><Button>Learn More</Button></Link>
                 </Col>
 
                 <Col sm={12} md={4}>
-                    <img src= 'https://www.americanexpress.com/en-us/travel/discover/photos/100073/7776/1600/Hero_PoolDeck.jpg?ch=560' alt =''/>
-                    <h3>Day Party</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nisi molestias corrupti iusto quae obcaecati</p>
+                    <img src= './images/dayp.webp' alt =''/>
+                    <h3 style ={{textAlign:"center", color: "white"}}>Day Party</h3>
+                    <p style ={{color: "white"}}>Sunshine, good vibes, and endless fun - nothing beats a day party with the squad</p>
                     <Link to = '/dayparty'><Button>Learn More</Button></Link>
                 </Col>
 
                 <Col sm={12} md={4}>
-                    <img src= 'https://www.americanexpress.com/en-us/travel/discover/photos/100073/7776/1600/Hero_PoolDeck.jpg?ch=560' alt =''/>
-                    <h3>Ladies Night</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nisi molestias corrupti iusto quae obcaecati</p>
+                    <img src= './images/lno3.webp' alt =''/>
+                    <h3 style ={{textAlign:"center", color: "white"}}>Ladies Night</h3>
+                    <p style ={{color: "white"}}>Cheers to a night of laughter, love, and unforgettable memories.</p>
                     <Link to = '/ladiesnight'><Button>Learn More</Button></Link>
                 </Col>
                     
