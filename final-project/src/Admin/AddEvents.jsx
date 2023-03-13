@@ -14,13 +14,14 @@ export default function AddEvents (){
     const[facebook, setFacebook]= useState("");
     const[image, setImage]= useState("");
     const[price, setPrice]= useState("");
+    const[description,setDescription]= useState("")
 
     
    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log ({e});
-    }
+    
         fetch(`https://final-project-api-ad.web.app/adddayparty`, {
             method: "POST",
             headers:{
@@ -36,6 +37,7 @@ export default function AddEvents (){
                 facebook,
                 image,
                 price,
+                description
             }),
         })
     
@@ -50,13 +52,14 @@ export default function AddEvents (){
             setFacebook("");
             setImage("");
             setPrice("")
+            setDescription("")
         })
         .catch(err => console.error(err))
 
-    
+    }    
    
     return(
-        < Form onSubmit ={handleSubmit}>
+        < Form onSubmit ={handleSubmit} className = 'form'>
          <Form.Group className = "mb-3" controlId='category'>
             <Form.Label>Event Category</Form.Label>
             <Form.Select 
@@ -117,6 +120,13 @@ export default function AddEvents (){
                 type="text"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}/>
+         </Form.Group>
+         <Form.Group className = "mb-3" controlId='price'>
+            <Form.Label>Description</Form.Label>
+            <Form.Control
+                type="text"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='formFile'>
             <Form.Label>Upload Image</Form.Label>

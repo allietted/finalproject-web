@@ -4,7 +4,7 @@ import LadiesDetails from '../Scenes/LadiesDetails'
 
 export default function LadiesListing() {
     // const[showEvents, setShowEvents]= useState("");
-    const [ladieslisting, setLadiesListing] = useState("")
+    const [ladiesListing, setLadiesListing] = useState("")
 
     useEffect(() => {
         fetch(`https://final-project-api-ad.web.app/ladiesnight`)
@@ -19,9 +19,9 @@ export default function LadiesListing() {
     return (
         <div>
             
-            {!ladieslisting
+            {!ladiesListing
                 ? (<p>Loading....</p>)
-                : (ladieslisting.map(
+                : (ladiesListing.map(
                     (element) => (
                         <LadiesDetails key={element._id}
                             eventCat={element._id}

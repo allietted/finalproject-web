@@ -1,4 +1,4 @@
-import Button  from 'react-bootstrap/Button';
+
 
 
 
@@ -20,9 +20,9 @@ export default function DeleteEvent ({eventId, setDayListing}){
     };
 
     return(
+        <>
         
-
- <Button onClick = {handleDelete} variant='primary' type='submit' width="30px"></Button> 
+        </>
          
          
     

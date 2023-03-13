@@ -1,5 +1,65 @@
 .home {
-    background-color: rgb(0, 0, 0);
+    background-color: black
 }
 img { width: 100%; }
 
+.image {
+    /* padding: 20px 40px; */
+    border: 2px solid rgba(144, 144, 114, 0.551);
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px #cbcbcb);
+    width: 100%;
+    height: 50vh;
+    
+   
+}
+
+.dayparty {
+    background-image: url(../public/images/peakpx.webp);  
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.family {
+
+    background-color: rgb(124, 234, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.ladies {
+
+    background-color: rgb(124, 234, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+   
+
+}
+
+.form {
+    filter: drop-shadow(0 0 10px #cbcbcb);
+    width:auto;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.image2 {
+    
+    padding: 20px 40px;
+    border: 2px black;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px #cbcbcb);
+   
+}
+
+.image3{
+    padding: 20px 40px;
+    border: 2px black;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px #cbcbcb);
+   
+}

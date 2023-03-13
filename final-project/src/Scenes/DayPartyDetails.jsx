@@ -2,46 +2,46 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container  from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Nav'
-import DeleteEvent from '../Admin/DeleteEvents';
+
 // import assets from '../assets'
 
-export default function DayParty({image,description,title,location, phone, website, instagram, facebook, price, eventId}){
+export default function DayParty({image,description,title,location, phone, website, instagram, facebook, price,}){
 
     return(
       <Navbar>
-      <Container fluid>
+      <Container fluid className='dayparty'>
         <Row> 
           <Col>
-            <h1>{title}</h1>
+            <h1 style ={{color: "white"}}>{title}</h1>
             </Col>
         </Row>            
         <Row>
-            <Col sm={12} md={4}><img src={image} alt = ""/></Col> 
-            <Col><p>{description}</p>
+            <Col sm={12} md={4}><img src={image} alt = "" className='image'/></Col> 
+            <Col><p style ={{textAlign:"center", color: "white"}}>{description}</p>
             </Col>      
         </Row>
         <Row>
             <Col sm={12} md={4}>
-                <p>{location}</p>
+                <p style ={{textAlign:"center", color: "white"}}>{location}</p>
             </Col>
             <Col sm={12} md={4}>
-                 <p>{phone}</p>
+                 <p style ={{textAlign:"center", color: "white"}}>{phone}</p>
             </Col>
             <Col sm={12} md={4}>
-                 <p>{website}</p> 
+                 <p style ={{textAlign:"center", color: "white"}}>{website}</p> 
             </Col>
                  
             <Col sm={12} md={4}>
-                <p>{instagram}</p>
+                <p style ={{textAlign:"center", color: "white"}}>{instagram}</p>
             
-                <p>{facebook}</p>
+                <p style ={{textAlign:"center", color: "white"}}>{facebook}</p>
             </Col>
             <Col sm={12} md={4}>
-                <p>{price}</p>
+                <p style ={{textAlign:"center", color: "white"}}>{price}</p>
             </Col>
               
             </Row>
-            <DeleteEvent eventId={eventId} />
+            
         </Container>
         </Navbar>
     )

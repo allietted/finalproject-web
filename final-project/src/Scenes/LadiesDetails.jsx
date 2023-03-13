@@ -2,21 +2,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container  from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Nav'
-import DeleteEvent from '../Admin/DeleteEvents';
+
 // import assets from '../assets'
 
 export default function LadiesNight({image, description,title,location, phone, website, instagram, facebook, price}){
 
     return(
       <Navbar>
-      <Container fluid>
+      <Container fluid className='ladies'>
         <Row> 
           <Col>
             <h1>{title}</h1>
             </Col>
         </Row>            
         <Row>
-            <Col sm={12} md={4}><img src = {image} alt = ""/></Col> 
+            <Col sm={12} md={4}><img src = {image} alt = ""className='image2'/></Col> 
             <Col><p>{description}</p></Col>      
         </Row>
         <Row>
@@ -39,7 +39,7 @@ export default function LadiesNight({image, description,title,location, phone, w
             </Col>
               
             </Row>
-            <DeleteEvent title={title} />
+            
         </Container>
         </Navbar>
     )
