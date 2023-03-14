@@ -17,25 +17,27 @@ export default function FamilyEvents({image, description, title,location, phone,
         </Row>            
         <Row>
             <Col sm={12} md={4}><img src={image} alt = ""className='image3' /></Col> 
-            <Col><p style ={{textAlign:"center", color: "white",}}>{description}</p></Col>      
+            <Col><p className="my-5" style ={{textAlign:"center", color: "white",}}>{description}</p></Col>      
         </Row>
         <Row>
             <Col sm={12} md={4}>
-                <p style ={{textAlign:"center", color: "white"}}>{location}</p>
+                <p style ={{textAlign:"center", color: "white"}}>Address: {location}</p>
             </Col>
             <Col sm={12} md={4}>
-                 <p style ={{textAlign:"center", color: "white"}}>{phone}</p>
+                 <p style ={{textAlign:"center", color: "white"}}>Phone: {phone}</p>
             </Col>
             <Col sm={12} md={4}>
-                 <p style ={{textAlign:"center", color: "white"}}>{website}</p> 
+                 <p style ={{textAlign:"center", color: "white"}}>Website: {website}</p> 
             </Col>
                  
             <Col sm={12} md={4}>
-                <p style ={{textAlign:"center", color: "white"}}>{instagram}</p>
-                <p style ={{textAlign:"center", color: "white"}}>{facebook}</p>
+                <p style ={{textAlign:"center", color: "white"}}>Instagram: {instagram}</p>
+            </Col>
+            <Col>
+                <p style ={{textAlign:"center", color: "white"}}>Facebook: {facebook}</p>
             </Col>
             <Col sm={12} md={4}>
-                <p  style ={{textAlign:"center", color: "white"}}>{price}</p>
+                <p  style ={{textAlign:"center", color: "white"}}>Price: {price}</p>
             </Col>
               
             </Row>

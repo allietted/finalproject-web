@@ -7,6 +7,7 @@ import DayPartyListing from './Scenes/DayPartyListing';
 import LadiesListing from './Scenes/LadiesListing'
 import AddEvents from './Admin/AddEvents';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Components/Footer/Footer'
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/home" element={<Home/>} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
 
     </>
   );

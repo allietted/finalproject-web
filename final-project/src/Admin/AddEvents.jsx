@@ -59,9 +59,10 @@ export default function AddEvents (){
     }    
    
     return(
+        <div className='admin'>
         < Form onSubmit ={handleSubmit} className = 'form'>
          <Form.Group className = "mb-3" controlId='category'>
-            <Form.Label>Event Category</Form.Label>
+            <Form.Label style ={{color: "white"}}>Event Category</Form.Label>
             <Form.Select 
                 aria-label =""
                 value = {eventCategory}
@@ -73,63 +74,63 @@ export default function AddEvents (){
                 </Form.Select>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='title'>
-            <Form.Label>Title</Form.Label>
+            <Form.Label style ={{color: "white"}}>Title</Form.Label>
             <Form.Control
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='location'>
-            <Form.Label>Location</Form.Label>
+            <Form.Label style ={{color: "white"}}>Location</Form.Label>
             <Form.Control
                 type="text"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='phone'>
-            <Form.Label>Phone</Form.Label>
+            <Form.Label style ={{color: "white"}}>Phone</Form.Label>
             <Form.Control
                 type="text"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='website'>
-            <Form.Label>Website</Form.Label>
+            <Form.Label style ={{color: "white"}}>Website</Form.Label>
             <Form.Control
                 type="text"
                 value={website}
                 onChange={(e) => setWebsite(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='instagram'>
-            <Form.Label>Instagram</Form.Label>
+            <Form.Label style ={{color: "white"}}>Instagram</Form.Label>
             <Form.Control
                 type="text"
                 value={instagram}
                 onChange={(e) => setInstagram(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='facebook'>
-            <Form.Label>Facebook</Form.Label>
+            <Form.Label style ={{color: "white"}}>Facebook</Form.Label>
             <Form.Control
                 type="text"
                 value={facebook}
                 onChange={(e) => setFacebook(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='price'>
-            <Form.Label>Price</Form.Label>
+            <Form.Label style ={{color: "white"}}>Price</Form.Label>
             <Form.Control
                 type="text"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='price'>
-            <Form.Label>Description</Form.Label>
+            <Form.Label style ={{color: "white"}}>Description</Form.Label>
             <Form.Control
                 type="text"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}/>
          </Form.Group>
          <Form.Group className = "mb-3" controlId='formFile'>
-            <Form.Label>Upload Image</Form.Label>
+            <Form.Label style ={{color: "white"}}>Upload Image</Form.Label>
             <Form.Control 
             type="text"
             value={image}
@@ -138,5 +139,6 @@ export default function AddEvents (){
          <Button onClick ={handleSubmit}variant='primary' type='submit'>Add Event
          </Button>
         </Form>
+        </div>
     );
 }

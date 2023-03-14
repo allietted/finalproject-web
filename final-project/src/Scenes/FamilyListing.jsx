@@ -17,7 +17,7 @@ export default function FamilyListing() {
 
 
     return (
-        <div>
+        <div className="parent">
             
             {!familyListing
                 ? (<p>Loading....</p>)
