@@ -1,8 +1,10 @@
+import '../Footer/footer.css'
+
 export default function Footer (){
     return(
-        <>
-            <p>Footer</p>
-            <script>document.write(new Date().getFullYear())</script>
-        </>
+        <footer>
+            <p> © {new Date().getFullYear()}</p>
+           
+        </footer>
     )
 }
